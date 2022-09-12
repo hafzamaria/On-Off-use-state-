@@ -1,0 +1,27 @@
+body{
+    display: flex;
+   /* flex-direction: column; */
+   justify-content: center;
+   background-color: rgb(245, 245, 245);
+   text-align: center;
+}
+.main{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(226, 221, 221);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    padding: 30px;
+    margin: 30px;
+    margin-top: 100px;
+}
+button{
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+    border: whitesmoke;
+    background-color: lightgray;
+}

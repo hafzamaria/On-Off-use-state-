@@ -10,14 +10,17 @@ import './style.css';
     const [Lit, setLit] = useState("OFF");  
 
     return (
+        <>
+        <h1>The On-Off Programe!</h1>
       <div className="main">
-        <h1 >Light is {Lit}!</h1>
+        <h2 >Light is {Lit}!</h2>
 
       <button type="button" onClick={() => setLit("ON")} >ON</button> 
         <br/>
          <button type="button" onClick={() => setLit("OFF")}>OFF</button>  
 
       </div>
+      </>
     )
   }
 

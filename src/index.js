@@ -16,7 +16,7 @@ const Room = () => {
       <div className={`room ${isLit ? "Lit" : "dark"}`}>
         <div className="main">
 
-          <h2>Room is {isLit ? "Lit" : "dark"}!</h2>
+          <h2>The Room is {isLit ? "Lit" : "dark"}!</h2>
     
           <div className="but">
             <FontAwesomeIcon

@@ -2,25 +2,39 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPowerOff } from "@fortawesome/free-solid-svg-icons";
 import "./style.css";
 
 //method01( without making variable)
 const Room = () => {
-  const [Lit, setLit] = useState("OFF");
+  const [isLit, setLit] = useState("true");
 
   return (
     <>
       <h1>The On-Off Programe!</h1>
-      <div className="main">
-        <h2>Light is {Lit}!</h2>
+      <div className={`room ${isLit ? "Lit" : "dark"}`}>
+        <div className="main">
 
-        <button type="button" onClick={() => setLit("ON")}>
-          ON
-        </button>
-        <br />
-        <button type="button" onClick={() => setLit("OFF")}>
-          OFF
-        </button>
+          <h2>Light is {isLit ? "Lit" : "dark"}!</h2>
+    
+          <div className="but">
+            <FontAwesomeIcon
+              className="on"
+              icon={faPowerOff}
+              color="green"
+              onClick={() => setLit(true)}
+            />
+        <br/>
+
+            <FontAwesomeIcon
+              className="off"
+              icon={faPowerOff}
+              color="red"
+              onClick={() => setLit(false)}
+            />
+          </div>
+        </div>
       </div>
     </>
   );
